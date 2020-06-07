@@ -2,18 +2,12 @@ from notion.client import NotionClient
 from datetime import datetime
 from matplotlib import pyplot as plt
 import matplotlib.dates as mdates
-import numpy
-import pandas as pd
 
 # Obtain the `token_v2` value by inspecting your browser cookies on a logged-in session on Notion.so
-client = NotionClient(token_v2="b231e6b8416d2a469483fce7191de467a703d9f1d136"
-                      "ab55d51ce65ad8c3de028ae6ad84991875b974f8f6177d7c1bbe77b"
-                      "58e11da5766a33b7ba0d2390e08dbd2342cb9ad371dfde8ce9"
-                      "35a654c")
+client = NotionClient(token_v2="Replace this with token v2")
 
 # Replace this URL with the URL of the page you want to edit
-page = client.get_collection_view("https://www.notion.so/c4934352d1504ddca"
-                                  "a8ddb6e7e287af7?v=f550c1b77988440fa8c33148a268386d")
+page = client.get_collection_view("Replace this with your Notion page link")
 
 all_rows = list(page.build_query().execute())
 all_rows_data = [row.get_all_properties() for row in all_rows]
@@ -45,13 +39,3 @@ fig = plt.figure(figsize=(15, 5)) # Plot graph
 ax = fig.add_subplot(111)
 ax.plot(sorted_list, data)
 plt.show()
-
-# Print any data for reference
-##print(date_list)
-##print(data)
-
-
-#-----Notes----
-##    t = datetime_object.timetuple()
-##    for i in t:
-##        date_list.append(i)
