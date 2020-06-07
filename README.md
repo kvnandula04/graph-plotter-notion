@@ -14,3 +14,8 @@ You need to make sure that you have the following libraries installed on Python:
 1) Matplotlib
 2) Notion
 
+# Sidenotes
+You must make sure that you're logged in on Notion web for this to work. 
+You must allow editing for your Notion page.
+
+Let me know if you have any issues.
