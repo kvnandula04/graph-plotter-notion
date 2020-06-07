@@ -23,8 +23,8 @@ for item in all_rows_data:
     date_list.append(datetime_object)
     data.append(screen_time)
 
-#Sort datetime list
-sorted_list = sorted(date_list)
+#Sort datetime list and match the lists with their respective data
+date_list, data = zip(*sorted(zip(date_list, data)))
 
 # Plot a graph using Matplotlib
 ax = plt.gca() #get axes
@@ -37,5 +37,5 @@ ax.xaxis.set_major_locator(locator)
 
 fig = plt.figure(figsize=(15, 5)) # Plot graph
 ax = fig.add_subplot(111)
-ax.plot(sorted_list, data)
+ax.plot(date_list, data)
 plt.show()
