@@ -1,5 +1,6 @@
 # graph-plotter-notion
 A python program that plots a graph from a Notion collection using notion-py(an unofficial API).
+![Demo Image](https://github.com/kvnandula04/graph-plotter-notion/blob/master/Demo%20Image.png?raw=true)
 
 # Usage
 You need to configure the following data if you want to use this program:
