@@ -16,6 +16,11 @@ You need to make sure that you have the following libraries installed on Python:
 
 # Sidenotes
 You must make sure that you're logged in on Notion web for this to work. 
+
 You must allow editing for your Notion page.
+
+There must be 2 columns(case sensitive) for this to work:
+1) Title - The date in the format Day + Month (For example, '6 June').
+2) Screen Time - The screen time that you'd like to plot, in minutes.
 
 Let me know if you have any issues.
